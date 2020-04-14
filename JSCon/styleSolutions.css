@@ -1,0 +1,11 @@
+/* You can write your codes here  */
+body{
+    text-align: center;
+    border: 5px;
+    border-color: blue;
+    background-color: burlywood;
+}
+.form{
+    border: 10px;
+    border-color: blue;
+}

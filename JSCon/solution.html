@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card Generator</title>
+    <link rel="stylesheet" href="/styleSolutions.css">
+
+</head>
+<body>
+    <div id="form">
+        <!--You dont have to provide style in this div-->
+        <form method="post" >
+            <label for="Name">Enter Student Name</label><br>
+            
+            <input type="text" id = "name"><br>
+            <label for="name">Enter Class</label><br>
+            <input type="text" id="class" placeholder="Enter class"><br>
+            <label for="class">Enter roll number</label><br>
+            <input type="text"  id="rollNo" placeholder="Enter roll no."><br>
+            <label for="a">Mark obtained in subject-1</label><br>
+            <input type="number"  id="mark1" placeholder="enter mark of subject1">/100<br>
+            <label for="b">Mark obtained in subject-2</label><br>
+            <input type="number"  id="mark2" placeholder="enter mark of subject2">/100<br>
+            <label for="c">Mark obtained in subject-3</label><br>
+            <input type="number"  id="mark3" placeholder="enter mark of subject3">/100<br>
+            <p>Click the button below to create Percentage Card</p>
+            <button type="button" onclick="Percentage();">Generate Card</button>
+          </form>
+          <!--Use the data from above input fileds to generate a card -->
+    </div>
+
+<div id="result">
+          
+
+<!--Write your codes from here-->
+
+</div>
+<script>
+   
+    function Percentage(){
+    
+        var a= parseInt(document.getElementById('mark1').value);
+    var b= parseInt(document.getElementById('mark2').value);
+    var c= parseInt(document.getElementById('mark3').value);
+    var Percentage=parseInt(((a+b+c)/3));
+    
+        document.getElementById("result").innerHTML="percentage obtained"+Percentage;
+        // document.write(Percentage);
+        alert("percentage obtained"+Percentage);
+    }
+</script>
+      </body> 
+
+</html>
